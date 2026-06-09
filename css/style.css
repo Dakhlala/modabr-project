@@ -28,6 +28,7 @@ body{
     --background-color:#fff;
     --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04),
                   0 4px 12px rgba(0, 0, 0, 0.06);
+    --text-color: #6A7282;
 
 }
 
@@ -397,26 +398,41 @@ background: linear-gradient(90deg, rgba(245, 246, 251, 1) 0%, rgba(244, 246, 249
 
 }
 
-.card1{
+.card{
     border: 1px solid var(--border-color);
     background-color: #fff;
     margin-top: 30px;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
+    padding: 20px;
 }
 
 
-.card1 .section{
-    padding-right: 40px;
+.card .section{
+    padding-right: 20px;
 }
 
-.card1 .section p
+.card .section p
 {
+    font-weight: 600;
+    color: var(--text-color);
     margin-bottom:0 ;
 }
 
-.card1 .section h2{
+.card .section h2{
     font-size: 36px;
     margin: 0;
 
 }
+
+
+.card .section span{
+    font-weight: 600;
+    font-size: 12px;
+    color: #00A63E;
+}
+
+.card .section .spn-red{
+    color: red;
+}
+
