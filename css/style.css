@@ -37,11 +37,11 @@ body{
 
 
 .container {  display: grid;
-  grid-template-columns: 0.6fr 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.5fr 1fr 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
+    grid-template-columns: 0.6fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.4fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
     "aside navbar navbar navbar"
     "aside card1 card2 card3"
     "aside activities transactions transactions"
@@ -97,7 +97,7 @@ body{
 }
 
 
- .aside .header .content{
+.aside .header .content{
     margin: auto;
     width: 45%;
 
@@ -550,14 +550,30 @@ background: linear-gradient(90deg, rgba(245, 246, 251, 1) 0%, rgba(244, 246, 249
     flex-shrink: 0;
 }
 
-.icon-food { background-color: #fff7ed; color: #f97316; }
-.icon-shopping { background-color: #eff6ff; color: #3b82f6; }
-.icon-split { background-color: #faf5ff; color: #a855f7; }
-.icon-work { background-color: #f0fdf4; color: #22c55e; }
-.icon-fuel { background-color: #fef2f2; color: #ef4444; }
-.icon-entertainment { background-color: #eef2ff; color: #6366f1; }
-.icon-health { background-color: #ecfeff; color: #06b6d4; }
-.icon-education { background-color: #f0fdf4; color: #10b981; }
+.icon-food {
+     background-color: #fff7ed; color: #f97316; 
+    }
+.icon-shopping { 
+    background-color: #eff6ff; color: #3b82f6;
+}
+.icon-split {
+     background-color: #faf5ff; color: #a855f7; 
+    }
+.icon-work {
+     background-color: #f0fdf4; color: #22c55e; 
+    }
+.icon-fuel { 
+    background-color: #fef2f2; color: #ef4444; 
+}
+.icon-entertainment {
+     background-color: #eef2ff; color: #6366f1; 
+    }
+.icon-health { 
+    background-color: #ecfeff; color: #06b6d4; 
+}
+.icon-education {
+     background-color: #f0fdf4; color: #10b981; 
+    }
 
 /* Category boxes */
 .box {
@@ -570,18 +586,154 @@ background: linear-gradient(90deg, rgba(245, 246, 251, 1) 0%, rgba(244, 246, 249
     font-weight: 600;
 }
 
-.box-income { background-color: #f0fdf4; color: #15803d; }
-.box-food { background-color: #fff7ed; color: #c2410c; }
-.box-shopping { background-color: #eff6ff; color: #1d4ed8; }
-.box-split { background-color: #faf5ff; color: #7c3aed; }
-.box-work { background-color: #f0fdf4; color: #15803d; }
-.box-fuel { background-color: #fef2f2; color: #b91c1c; }
-.box-entertainment { background-color: #eef2ff; color: #4338ca; }
-.box-health { background-color: #ecfeff; color: #0e7490; }
-.box-education { background-color: #f0fdf4; color: #047857; }
+.box-income {
+     background-color: #f0fdf4; color: #15803d; 
+    }
+.box-food {
+     background-color: #fff7ed; color: #c2410c; 
+    }
+.box-shopping { 
+    background-color: #eff6ff; color: #1d4ed8;
+ }
+.box-split {
+     background-color: #faf5ff; color: #7c3aed;
+     }
+.box-work {
+     background-color: #f0fdf4; color: #15803d; 
+    }
+.box-fuel {
+     background-color: #fef2f2; color: #b91c1c;
+     }
+.box-entertainment { 
+    background-color: #eef2ff; color: #4338ca;
+ }
+.box-health { 
+    background-color: #ecfeff; color: #0e7490; 
+}
+.box-education { 
+    background-color: #f0fdf4; color: #047857;
+ }
 
-.box-status { background-color: #f0fdf4; color: #15803d; }
-.box-pending { background-color: #fefce8; color: #a16207; }
+.box-status { 
+    background-color: #f0fdf4; color: #15803d;
+ }
+.box-pending { 
+    background-color: #fefce8; color: #a16207; 
+}
 
-.green { color: #15803d; font-weight: 700; }
-.red { color: #dc2626; font-weight: 700; }
+.green { 
+    color: #15803d; font-weight: 700; 
+}
+.red {
+     color: #dc2626; font-weight: 700; 
+    }
+
+
+/* activities style */
+
+.activities{
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.activities .card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.activities .card .right-icon{
+    margin-top: 10px;
+    font-size: 16px;
+    align-self: baseline;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+
+.activities .card .left-txt{
+    width: 90%;
+}
+
+.activities .card .left-txt .txt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    
+}
+
+.activities .card .left-txt .txt h4{
+    margin: 0;
+}
+
+.activities .card .left-txt p{
+    margin: 0 ;
+    margin-bottom:10px ;
+}
+
+.activities button{
+    margin: 50px auto;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    color: #397deb;
+    font-weight: 600;
+}
+.activities button::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom:50px ;
+    background-color: #f3f4f6;
+}
+
+
+.activities .card1{
+    background-color:#eff6ff ;
+    border: none;
+    border-left:5px solid #2b7fff ;
+    
+}
+
+.activities .card2{
+    margin-top: 15px;
+    background-color: #f0fdf4;
+    border: none;
+    border-left:5px solid #00c950 ;
+    
+}
+
+
+.activities .card .clr1{
+    background-color: #dbeafe;
+}
+.activities .card .clr2{
+    background-color: #dcfce7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
