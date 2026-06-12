@@ -39,7 +39,7 @@ body{
 
 .container {  display: grid;
     grid-template-columns: 0.6fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.4fr 1fr 1fr 0.7fr 0.7fr 0.05fr;
+    grid-template-rows: 0.1fr 0.4fr 1fr 1fr 0.7fr 0.7fr 0.0fr;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -754,5 +754,140 @@ padding: 28px 12px;
 .bills .bills-cards .card .bills-card-icon3{
     background-color: #ffe2e2;
 
+}
+
+.overview .card{
+    border-radius: 10px;
+    border: 1px solid #dbeafe;
+    padding: 15px;
+}
+
+.overview-card{
+    
+    margin-top: 10px;
+}
+.overview-card1{
+    background-color: #eff4ff;
+    border: none;
+}
+.card .overview-card-header{
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.card .overview-card-txt{
+    margin-bottom: 5px;
+}
+
+.card .overview-card-usage{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.card .line{
+    background-color: #e5e7eb;
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.card .line .inner-line{
+    background-color: #526dff;
+    width: 82.5%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-box .right-side{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.flex-box .right-side .icon{
+    width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  background-color: #ffedd4;
+  font-size: 18px;
+}
+
+.overview-txt{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left-side .precentage{
+    padding: 2px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 0 auto 8px;
+    background-color: #ffedd4;
+        font-weight: 600;
+}
+
+
+
+.right-side .icon.clr2{
+    background-color: #fee2e2;
+}
+.right-side .icon.clr3{
+    background-color: #fce7f3;
+}
+.right-side .icon.clr4{
+    background-color: #dcfce7;
+}
+
+
+.left-side .precentage.clr1{
+    color: #41865a;
+    background-color:#dcfce7 ;
+}
+.left-side .precentage.clr2{
+    background-color: #fee2e2;
+    color: #a73838;
+}
+.left-side .precentage.clr3{
+    background-color: #fef3c7;
+    color: #92400e;
+}
+.left-side .precentage.clr4{
+    color: #41865a;
+    background-color: #dcfce7;
+}
+
+
+
+.card .line .inner-line.clr1{
+    background-color: #ff6900;
+    width: 50%;
+}
+.card .line .inner-line.clr2{
+    background-color: #fb2c36;
+    width: 100%;
+}
+.card .line .inner-line.clr3{
+    background-color: #f6339a;
+    width: 80%;
+}
+.card .line .inner-line.clr4{
+    background-color: #00c950;
+    width: 86%;
 }
 
