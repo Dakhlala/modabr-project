@@ -8,7 +8,6 @@
     <script src="https://kit.fontawesome.com/0dfc26d656.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>مدبّر | إدارة أموالك بذكاء</title>
-<base target="_blank">
 </head>
 <body>
     <main>
@@ -20,7 +19,7 @@
         <div class="header">
 
         <div class="image">
-            <i class="fa-solid fa-coins fa-xl" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-solid fa-coins" style="color: rgb(255, 255, 255);"></i>
         </div>
             <div class="content">
                 <h1>مدبّر</h1>
@@ -640,6 +639,40 @@
             <h2>الدخل مقابل المصروفات   </h2>
             <p>التحليل  <i class="fa-solid fa-angle-left"></i></p>
         </div>
+        <div class="chart-legend">
+            <span class="legend-item"><span class="legend-dot dot-income"></span>الدخل</span>
+            <span class="legend-item"><span class="legend-dot dot-expenses"></span>المصروفات</span>
+        </div>
+        <div class="chart">
+            <div class="chart-bar-group">
+                <div class="bars">
+                    <div class="bar bar-income" style="height: 90%;"></div>
+                    <div class="bar bar-expenses" style="height: 45%;"></div>
+                </div>
+                <span class="chart-label">الأسبوع 1</span>
+            </div>
+            <div class="chart-bar-group">
+                <div class="bars">
+                    <div class="bar bar-income" style="height: 100%;"></div>
+                    <div class="bar bar-expenses" style="height: 55%;"></div>
+                </div>
+                <span class="chart-label">الأسبوع 2</span>
+            </div>
+            <div class="chart-bar-group">
+                <div class="bars">
+                    <div class="bar bar-income" style="height: 95%;"></div>
+                    <div class="bar bar-expenses" style="height: 50%;"></div>
+                </div>
+                <span class="chart-label">الأسبوع 3</span>
+            </div>
+            <div class="chart-bar-group">
+                <div class="bars">
+                    <div class="bar bar-income" style="height: 85%;"></div>
+                    <div class="bar bar-expenses" style="height: 40%;"></div>
+                </div>
+                <span class="chart-label">الأسبوع 4</span>
+            </div>
+        </div>
     </section>
   </div>
   <div class="summary layout">
@@ -648,13 +681,193 @@
             <h2>ملخص الحساب </h2>
             <p>التفاصيل  <i class="fa-solid fa-angle-left"></i></p>
         </div>
+        <div class="summary-card">
+            <div class="summary-right">
+                <div class="summary-icon icon-checking">
+                    <i class="fa-solid fa-building-columns" style="color: rgb(27, 98, 252);"></i>
+                </div>
+                <div class="summary-txt">
+                    <span>حساب جاري</span>
+                    <span class="siz">بنك مصر [4532•••]</span>
+                </div>
+            </div>
+            <div class="summary-left">
+                <span>8,450 جنية</span>
+            </div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-right">
+                <div class="summary-icon icon-savings">
+                    <i class="fa-solid fa-piggy-bank" style="color: rgb(0, 166, 62);"></i>
+                </div>
+                <div class="summary-txt">
+                    <span>حساب التوفير</span>
+                    <span class="siz">بنك مصر [8901•••]</span>
+                </div>
+            </div>
+            <div class="summary-left">
+                <span>297,540 جنية</span>
+            </div>
+        </div>
+        <div class="summary-card summary-card3">
+            <div class="summary-right">
+                <div class="summary-icon icon-credit">
+                    <i class="fa-solid fa-credit-card" style="color: rgb(152, 16, 250);"></i>
+                </div>
+                <div class="summary-txt">
+                    <span>بطاقة ائتمان</span>
+                    <span class="siz">متاح: 1,850 جنية من 2,500 جنية</span>
+                </div>
+            </div>
+            <div class="summary-left">
+                <span class="red">- 6,000 جنية</span>
+            </div>
+        </div>
     </section>
   </div>
+
+<!-- PAYMENT -->
+
+
   <div class="payment layout">
         <section>
         <div class="header overview-header">
             <h2>وسائل الدفع </h2>
             <p>إدارة <i class="fa-solid fa-angle-left"></i></p>
+        </div>
+        <div class="payment-card payment-visa flip">
+          <div class="flip-inner">
+            <div class="front">
+            <div class="payment-top">
+                <div class="payment-badge">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span>أساسية</span>
+                </div>
+                <div class="payment-logo">
+                    <i class="fa-brands fa-cc-visa fa-2x"></i>
+                </div>
+                <button class="payment-action"><i class="fa-regular fa-credit-card"></i></button>
+            </div>
+            <div class="payment-number">
+                <span class="dots">••••</span>
+                <span class="dots">••••</span>
+                <span class="dots">••••</span>
+                <span>4532</span>
+            </div>
+            <div class="payment-bottom">
+                <div class="payment-info">
+                    <span class="siz">حامل البطاقة</span>
+                    <span>سيف أسامة</span>
+                </div>
+                <div class="payment-info payment-expiry">
+                    <span class="siz">تنتهي</span>
+                    <span>12/26</span>
+                </div>
+            </div>
+            </div>
+            <div class="back">
+                <div class="back-strip"></div>
+                <div class="back-signature">
+                    <span class="back-sign-text">توقيع معتمد - غير صالحة بدون توقيع</span>
+                </div>
+                <div class="back-cvv-row">
+                    <div class="back-cvv-strip"><span>4532</span></div>
+                    <div class="back-cvv-box">
+                        <span class="siz">CVV</span>
+                        <span class="back-cvv">123</span>
+                    </div>
+                </div>
+                <div class="back-logo">
+                    <i class="fa-brands fa-cc-visa fa-2x"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="payment-card payment-mastercard flip">
+          <div class="flip-inner">
+            <div class="front">
+            <div class="payment-top">
+                <div class="payment-logo">
+                    <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                </div>
+                <button class="payment-action"><i class="fa-regular fa-credit-card"></i></button>
+            </div>
+            <div class="payment-number">
+                <span class="dots">••••</span>
+                <span class="dots">••••</span>
+                <span class="dots">••••</span>
+                <span>8901</span>
+            </div>
+            <div class="payment-bottom">
+                <div class="payment-info">
+                    <span class="siz">حامل البطاقة</span>
+                    <span>سيف أسامة</span>
+                </div>
+                <div class="payment-info payment-expiry">
+                    <span class="siz">تنتهي</span>
+                    <span>08/27</span>
+                </div>
+            </div>
+            </div>
+            <div class="back">
+                <div class="back-strip"></div>
+                <div class="back-signature">
+                    <span class="back-sign-text">توقيع معتمد - غير صالحة بدون توقيع</span>
+                </div>
+                <div class="back-cvv-row">
+                    <div class="back-cvv-strip"><span>8901</span></div>
+                    <div class="back-cvv-box">
+                        <span class="siz">CVV</span>
+                        <span class="back-cvv">456</span>
+                    </div>
+                </div>
+                <div class="back-logo">
+                    <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment-card payment-paypal flip">
+          <div class="flip-inner">
+            <div class="front">
+            <div class="payment-top">
+                <div class="payment-logo">
+                    <i class="fa-brands fa-paypal fa-2x"></i>
+                </div>
+                <button class="payment-action"><i class="fa-regular fa-credit-card"></i></button>
+            </div>
+            <div class="payment-paypal-name">
+                <span>حساب PayPal</span>
+            </div>
+            <div class="payment-bottom">
+                <div class="payment-info">
+                    <span class="siz">الإيميل</span>
+                    <span>seif@example.com</span>
+                </div>
+                <div class="payment-info payment-expiry">
+                    <span class="siz">الحالة</span>
+                    <span class="payment-verified">موثق</span>
+                </div>
+            </div>
+            </div>
+            <div class="back">
+                <div class="back-strip"></div>
+                <div class="back-signature">
+                    <span class="back-sign-text">حساب موثق ومحمي بالكامل</span>
+                </div>
+                <div class="back-cvv-row">
+                    <div class="back-cvv-strip"><span>seif@example.com</span></div>
+                    <div class="back-cvv-box">
+                        <span class="siz">الحالة</span>
+                        <span class="back-cvv payment-verified">موثق</span>
+                    </div>
+                </div>
+                <div class="back-logo">
+                    <i class="fa-brands fa-paypal fa-2x"></i>
+                </div>
+            </div>
+          </div>
         </div>
     </section>
   </div>
